@@ -38,7 +38,6 @@ const createGalleryItem = images.map(image => {
   `;
  
 }).join("");
-galleryList.classList.add('gallery');
 
 galleryList.insertAdjacentHTML("beforeend", createGalleryItem);
  
@@ -47,25 +46,3 @@ galleryList.insertAdjacentHTML("beforeend", createGalleryItem);
 
 
 
-//    const gallery = document.querySelector('.gallery');
-
-//     const createGalleryItem = ({ url, alt }) => {
-//       const listItem = document.createElement('li');
-//       listItem.classList.add('gallery-item');
-
-//       const image = document.createElement('img');
-//       image.src = url;
-//       image.alt = alt;
-//       image.classList.add('gallery-img');
-
-//       listItem.appendChild(image);
-
-//       return listItem;
-//     };
-
-//     const renderGallery = (imagesArray) => {
-//       const galleryItems = imagesArray.map(createGalleryItem);
-//       gallery.append(...galleryItems);
-//     };
-
-// renderGallery(images);

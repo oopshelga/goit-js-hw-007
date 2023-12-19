@@ -5,14 +5,15 @@
 // категорії(усіх < li >, вкладених у нього).
 
 
+
 const categoryElements = document.querySelectorAll('.item');
 console.log(`Number of categories: ${categoryElements.length}`);
 
 categoryElements.forEach(element => {
-    const categoryName = element.querySelector('h2');
-    categoryName.textContent;
-    const categoryElementsCount = element.querySelectorAll('ul li');
-    categoryElementsCount.length;
-  console.log(`Category: ${categoryName}`);
-  console.log(`Elements: ${categoryElementsCount}`);
+    const categoryName = element.querySelector('h2').textContent;
+    const categoryElementsCount = element.querySelectorAll('ul li').length;
+
+    console.log(`Category: ${categoryName}`);
+    console.log(`Elements: ${categoryElementsCount}`);
+    
 });
